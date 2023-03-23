@@ -4,7 +4,7 @@ export default function Main() {
   return (
     <div>
       <NavBar />
-      <h2>Hello</h2>
+      <h1>Hello</h1>
     </div>
   );
 }
