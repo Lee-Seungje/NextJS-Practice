@@ -1,5 +1,4 @@
-import { Head } from "next/document";
-import { Fragment } from "react";
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 interface props {
