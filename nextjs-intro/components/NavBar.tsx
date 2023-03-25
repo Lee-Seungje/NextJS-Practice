@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function NavBar() {
+const NavBar = () => {
   const router = useRouter();
   return (
     <nav>
@@ -19,4 +19,6 @@ export default function NavBar() {
       </Link>
     </nav>
   );
-}
+};
+
+export default NavBar;

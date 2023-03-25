@@ -1,17 +1,21 @@
+import { Head } from "next/document";
 import { Fragment } from "react";
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 interface props {
   Component: any;
   pageProps: any;
 }
 
-export function GlobalApp({ Component, pageProps }: props) {
+const GlobalApp = ({ Component, pageProps }: props) => {
   return (
-    <Fragment>
-      <NavBar />
+    <Layout>
+      <Head>
+        <title>Home | Next Movies</title>
+      </Head>
       <Component {...pageProps} />
-      <h1>hello</h1>
-    </Fragment>
+    </Layout>
   );
-}
+};
+
+export default GlobalApp;
