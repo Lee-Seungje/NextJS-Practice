@@ -2,11 +2,11 @@ import axios from "axios";
 import Seo from "../components/Seo";
 
 const About = () => {
+  const url =
+    "https://port-0-idea-archive-server-p8xrq2mlfszgkzn.sel3.cloudtype.app";
   const get = async () => {
     try {
-      const res = await axios.get(
-        "https://port-0-idea-archive-server-p8xrq2mlfszgkzn.sel3.cloudtype.app/post"
-      );
+      const res = await axios.get(`/post`);
       const data = res.data;
       console.log(data);
     } catch (err) {
