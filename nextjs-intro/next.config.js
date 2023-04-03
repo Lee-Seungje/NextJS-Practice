@@ -4,11 +4,11 @@ const nextConfig = {
     appDir: true,
   },
 };
-const URL =
-  "https://port-0-idea-archive-server-p8xrq2mlfszgkzn.sel3.cloudtype.app";
 
 module.exports = {
   reactStrictMode: true,
+  swcMinify: true,
+
   async redirects() {
     return [
       {
@@ -22,7 +22,8 @@ module.exports = {
     return [
       {
         source: "/post",
-        destination: URL,
+        destination:
+          "https://port-0-idea-archive-server-p8xrq2mlfszgkzn.sel3.cloudtype.app",
       },
     ];
   },
