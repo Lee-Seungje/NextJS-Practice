@@ -18,13 +18,13 @@ module.exports = {
       },
     ];
   },
-  async rewriters() {
-    return [
-      {
-        source: "/post",
-        destination:
-          "https://port-0-idea-archive-server-p8xrq2mlfszgkzn.sel3.cloudtype.app",
-      },
-    ];
-  },
+  // async rewriters() {
+  //   return [
+  //     {
+  //       source: "/post",
+  //       destination:
+  //         "https://port-0-idea-archive-server-p8xrq2mlfszgkzn.sel3.cloudtype.app",
+  //     },
+  //   ];
+  // },
 };
