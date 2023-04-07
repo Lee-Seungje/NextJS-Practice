@@ -28,8 +28,7 @@ const About = () => {
           },
         }
       );
-      const data = res.data;
-      console.log(data);
+      console.log(res);
     } catch (err) {
       console.error(err);
     }
