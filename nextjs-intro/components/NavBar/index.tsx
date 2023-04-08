@@ -7,18 +7,13 @@ const NavBar = () => {
   return (
     <S.Nav>
       <S.LinkContainer>
-        <Link
-          style={{ color: router.pathname === "/" ? "#FF5C5C" : "#999999" }}
-          href="/"
-        >
+        <Link className={router.pathname === "/" ? "on" : "999999"} href="/">
           Home
         </Link>
       </S.LinkContainer>
       <S.LinkContainer>
         <Link
-          style={{
-            color: router.pathname === "/about" ? "#FF5C5C" : "#999999",
-          }}
+          className={router.pathname === "/about" ? "on" : "999999"}
           href="/about"
         >
           About
@@ -26,9 +21,7 @@ const NavBar = () => {
       </S.LinkContainer>
       <S.LinkContainer>
         <Link
-          style={{
-            color: router.pathname === "/signin" ? "#FF5C5C" : "#999999",
-          }}
+          className={router.pathname === "/signin" ? "on" : "999999"}
           href="/signin"
         >
           SignIn
@@ -36,9 +29,7 @@ const NavBar = () => {
       </S.LinkContainer>
       <S.LinkContainer>
         <Link
-          style={{
-            color: router.pathname === "/signup" ? "#FF5C5C" : "#999999",
-          }}
+          className={router.pathname === "/signup" ? "on" : "999999"}
           href="/signup"
         >
           SignUp
@@ -46,9 +37,7 @@ const NavBar = () => {
       </S.LinkContainer>
       <S.LinkContainer>
         <Link
-          style={{
-            color: router.pathname === "/order" ? "#FF5C5C" : "#999999",
-          }}
+          className={router.pathname === "/order" ? "on" : "999999"}
           href="/order"
         >
           Order
