@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import "../src/global.css";
 
 interface props {
   Component: any;
