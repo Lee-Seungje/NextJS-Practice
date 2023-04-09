@@ -15,13 +15,13 @@ const About = () => {
     const pays = document.getElementById("1-3") as any;
     const pay = pays.options[pays.selectedIndex].value;
     try {
-      const res = await axios.get(
+      const res = await axios.post(
         "https://port-0-icee-tea-server-duzu222alg58k27h.sel3.cloudtype.app/purchase",
         {
           headers: {
             accessToken: localStorage.getItem("token"),
           },
-          params: {
+          body: {
             flavor: flavor,
             size: size,
             pay: pay,
